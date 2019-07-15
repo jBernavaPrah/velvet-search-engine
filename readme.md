@@ -1,6 +1,7 @@
 <p align="center">
 <img height="55px" src="https://velvetmedia.it/img/logo-velvet-positivo.svg">
 </p>
+
 # Velvet - Search Engine
 
 ## Project Requests
@@ -63,7 +64,7 @@
 ## Install
 To use this in production run:
 ```
-git clone linktogithubrepo.com/ projectName
+git clone ps://jbernavaprah@bitbucket.org/jbernavaprah/velvet-search-engine.git velvet-search-engine
 composer install --optimize-autoloader --no-dev
 npm install
 cp .env.example .env # then modify it accordly
