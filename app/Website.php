@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Website extends Model
 {
     /**
-     * @var array see \Traits\FullTextSearch
+     * Add columns with priority. If you not specific the key, the priority is default to 1.
+     * @var array See \Traits\FullTextSearch
      */
     protected $searchable = [
         'url' => 2,

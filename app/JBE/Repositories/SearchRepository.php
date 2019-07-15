@@ -18,7 +18,7 @@ class SearchRepository implements RepositoryInterface
      *      'q'     => (string) Query to search. Required.
      *      'limit' => (int) Return subset of total. Default: 10.
      *    ]
-     * @return Collection Website's collections founded
+     * @return Collection of Website matched.
      */
 
     public function execute(array $params)
