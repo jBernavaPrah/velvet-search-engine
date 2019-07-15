@@ -1,0 +1,33 @@
+// Variables
+@import 'variables';
+
+a {
+    color: $darkBlue;
+    &:visited {
+        color:$purple;
+    }
+}
+
+.search-input {
+    border-radius: 24px;
+    border: 1px solid $gray;
+    background: $white;
+    height: 44px;
+    font: 16px arial,sans-serif;
+    color: $black;
+    word-wrap: break-word;
+    &:hover{
+        box-shadow: 0 1px 6px 0 $gray;
+        border-color: $white;
+    }
+    &:focus{
+        border-color: $white;
+        box-shadow: 0 1px 6px 0 $gray;
+        background-color: $white;
+
+    }
+}
+
+.result-url {
+    color: $darkGreen;
+}

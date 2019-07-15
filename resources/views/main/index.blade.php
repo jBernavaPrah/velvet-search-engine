@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="row justify-content-center">
                 <div class="col-md-5">
-                    @include('partials.logo')
+                        @include('partials.logo')
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
