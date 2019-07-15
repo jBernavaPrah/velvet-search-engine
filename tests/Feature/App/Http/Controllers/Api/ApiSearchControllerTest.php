@@ -21,21 +21,23 @@ class ApiSearchControllerTest extends TestCase
     {
 
         parent::setUp();
+
+        // Commit here because the full text indexes are not filled in transaction.
         DB::commit();
 
         /**
-         * Seed websites table.
+         * Seed websites table because on each test all table are emptied.
          */
 
         $this->artisan('db:seed');
 
+        // restart the transactions..
         DB::beginTransaction();
     }
 
     public function testSearchEndpointRequiredQuery()
     {
 
-        //$this->withoutExceptionHandling();
 
         $response = $this->json('get', route('api.search.index'));
 
@@ -53,7 +55,7 @@ class ApiSearchControllerTest extends TestCase
 
     public function testSearchResponseAsAspect()
     {
-        //$this->withoutExceptionHandling();
+
         $response = $this->json('get', route('api.search.index', ['q' => 'lorem']));
 
         $response->assertOk()
@@ -67,7 +69,7 @@ class ApiSearchControllerTest extends TestCase
 
     public function testSearchResponseReturnOnly10Records()
     {
-        $response = $this->json('get', route('api.search.index', ['q' => 'lorem']));
+        $response = $this->json('get', route('api.search.index', ['q' => 'lorem', 'limit' => 10]));
 
         $response->assertOk()
             ->assertJsonCount(10, 'data');

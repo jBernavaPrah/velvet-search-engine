@@ -7,7 +7,7 @@ namespace App\JBE\Repositories;
 interface RepositoryInterface
 {
     /**
-     * Execute the
+     * Entry point for repository
      * @param array $data
      * @return mixed
      */

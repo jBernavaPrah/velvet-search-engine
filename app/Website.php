@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Website extends Model
 {
-
+    /**
+     * @var array see \Traits\FullTextSearch
+     */
     protected $searchable = [
         'url' => 2,
         'title' => 1,
@@ -16,6 +18,9 @@ class Website extends Model
         'keywords'
     ];
 
+    /**
+     * Add the full test search capacity for that model.
+     */
     use FullTextSearch;
 
 
