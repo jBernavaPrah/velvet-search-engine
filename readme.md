@@ -62,17 +62,27 @@
 - Repository with Interfaces to reuse business logic.
 
 ## Install
-To use this in production run:
+To run project locally:
 ```
-git clone ps://jbernavaprah@bitbucket.org/jbernavaprah/velvet-search-engine.git velvet-search-engine
-cd velvet-search-engine
-composer install --optimize-autoloader --no-dev
-npm install
-cp .env.example .env # then modify it accordly
-php artisan key:generate
-php artisan migrate --seed # Create database and populate it
-php artisan config:cache # Optimize and cache configs
-php artisan route:cache # Optimize and cache Routes
+# clone project
+
+$ git clone https://jbernavaprah@bitbucket.org/jbernavaprah/velvet-search-engine.git velvet-search-engine
+$ cd velvet-search-engine
+
+# Install all dependecies
+
+$ composer install
+$ npm install 
+
+# Configure enviroment
+
+$ cp .env.example .env 
+
+
+$ php artisan key:generate
+$ php artisan migrate --seed # Create tables and populate it
+
+$ php artisan serve # To start project on http://127.0.0.1:8000
 ```
 
 ## Tests
