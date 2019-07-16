@@ -1,12 +1,12 @@
 <?php
 
 
-namespace App\JBE\Repositories;
+namespace App\JBE\Repositories\Search;
 
 use App\Website;
 use Illuminate\Support\Collection;
 
-class SearchRepository implements RepositoryInterface
+class SearchRepository implements SearchInterface
 {
 
     /**

@@ -28,7 +28,7 @@
         - **O**pen Closed, because it is tested. The test prevents from any accidental modification or deletion of code that may be used somewhere else. 
         - **L**iskov Substitution, I can easily interchange the implementation with other repository because both implement a same interface `\App\JBE\Repositories\RepositoryInterface`.
         - **I**nterface Segregation, because the interface is super slim and it has only one definition of method.
-        - **D**ependency Inversion, currently not implemented because it does not depend on interfaces. 
+        - **D**ependency Inversion, implemented using the register of Laravel (see `\App\Providers\AppServiceProvider::register`). 
 - [X] **Adhere to coding standards**
     - MVC (Laravel framework).
     - SOLID Principe.

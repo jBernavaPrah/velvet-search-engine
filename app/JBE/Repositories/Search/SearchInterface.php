@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\JBE\Repositories;
+namespace App\JBE\Repositories\Search;
 
 
-interface RepositoryInterface
+interface SearchInterface
 {
     /**
      * Entry point for repository
