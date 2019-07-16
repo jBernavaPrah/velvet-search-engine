@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Valvet - SearchEngine'),
+    'name' => env('APP_NAME', 'Velvet - SearchEngine'),
 
     /*
     |--------------------------------------------------------------------------
